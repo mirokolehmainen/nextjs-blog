@@ -3,6 +3,9 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Navigation from '/components/navigation';
+import Footer from '/components/Footer';
+import SearchBar from '/components/SearchBar'; // Import the SearchBar component
 
 const name = 'Miro';
 export const siteTitle = 'Next.js Sample Website';
@@ -57,13 +60,11 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
+        <Navigation />
+        <SearchBar /> 
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
+      <Footer />
     </div>
   );
 }
