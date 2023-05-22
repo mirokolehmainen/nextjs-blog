@@ -3,9 +3,9 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import Navigation from '/components/navigation';
-import Footer from '/components/Footer';
-import SearchBar from '/components/SearchBar'; // Import the SearchBar component
+import Navigation from '../components/navigation';
+import Footer from '../components/Footer';
+import SearchBar from '../components/SearchBar'; 
 
 const name = 'Miro';
 export const siteTitle = 'Next.js Sample Website';
